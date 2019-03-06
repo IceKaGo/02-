@@ -1,0 +1,244 @@
+/*通用样式*/
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 10px;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+
+
+/*ipad下布局样式*/
+/*第一部分*/
+header{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #B2C5CC;
+	position: relative;
+}
+header nav{
+	height: 5rem;
+	line-height: 5rem;
+	font-size: 2rem;
+}
+header> nav > .title{
+	display: none;
+}
+header > nav > .tb{
+	display: none;
+}
+header .items > a{
+	display: inline-block;
+	width: 10rem;
+	text-align: center;
+}
+header .items a:nth-child(1){
+	color:#A9A9A9;
+}
+header > .logo{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	height: 30rem;
+	color: #FFFFFF;
+}
+header > .logo > h1{
+	margin-top: 1rem;
+}
+.login{
+	margin: 5rem;
+	height: 20rem;
+}
+.login input{
+	border: none;
+	outline:medium;
+	background: #FFFFFF;
+	width: 14rem;
+	font-size: 2rem;
+	line-height: 4rem;
+	border-radius: 5px;
+}
+.login input:hover{
+	cursor: pointer;
+	color: #B2C5CC;
+	border: 1px solid #F0FFFF;
+}
+
+
+/*第二部分*/
+nav ul{
+	display: flex;
+	height: 5rem;
+	line-height: 5rem;
+}
+nav ul li{
+	flex: 1;
+	color: #bababa;
+	text-align: center;
+	font-size: 1.5rem;
+	border-bottom: 1px solid #ccc;
+}
+nav ul li:hover{
+	cursor: pointer;
+	color: #545454;
+}
+nav ul :nth-child(1){
+	color: #000;
+}
+
+
+/*第三部分*/
+.content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #000000;
+}
+.content  h1{
+	margin-top: 2rem;
+	font-size: 2rem;
+	text-align: center;
+}
+.content  article{
+	margin:2rem 12rem;
+	text-indent: 3rem;
+	line-height: 3rem;
+	font-size: 1.5rem;
+}
+
+
+/*第四部分*/
+.figcaption{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem;
+	background: #CCCCCC;
+	box-sizing: border-box;
+}
+.figcaption h1{
+	color: #ACACAC;
+}
+.figcaption > span{
+	font-size: 1.5rem;
+	color: #acacac;
+}
+
+
+/*第五部分*/
+.frigue{
+	padding: 3rem;
+	background: url(../img/bg.jpg);
+	background-size: cover ;
+}
+.frigue h1{
+	margin-bottom: 1rem;
+}
+.frigue-content{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-around ;
+	align-content: space-between;
+	
+}
+.frigue-content div{
+	width: 27%;
+	margin:2rem;
+}
+.frigue-content div img{
+	width: 100%;
+	height: 100%;
+}
+.frigue-content div:hover{
+	transform: scale(1.4,1.2);
+			   
+}
+	
+/*第六部分*/
+footer{
+	font-size: 1.6rem;
+	text-align: center;
+	background: #CCCCCC;
+	padding: 1rem;
+}
+
+/*ipone6下布局方式*/
+@media screen and (max-width:767px ){
+	/*第一部分*/
+	header >nav{
+		width: 100%;
+		display: block;
+	}
+	header >nav .items{
+		display: none;
+	}
+	header >nav .items a{
+		width: 100%;
+		height: 4rem;
+		background-color: #7ea6b1;
+		position: relative;
+		text-align: center;
+		padding: 1rem 0;
+		color: #FFFFFF;
+		border-bottom: 1px solid #FFFFFF;
+	}
+	header >nav .items a:hover{
+		background: #575656;
+	}
+	header>nav .title{
+		width: 100%;
+		text-align: center;
+		display: block;
+		color: #FFFFFF;
+	}
+	header>nav>.menu{
+		background: url(../img/菜单.png);
+		background-size: cover;
+		width: 3rem;
+		height: 3rem;
+		position: absolute;
+		right: 2rem;
+		top: 1rem;
+		display: block;
+		cursor: pointer;
+	}
+	.login{
+		height: 5rem;
+	}
+	/*第三部分*/
+	.content  article{
+		margin:2rem 5rem;
+	}
+	/*第五部分*/
+	.frigue h1{
+		font-size: 2rem;
+	}
+	.frigue-content div{
+		width: 35%;
+	}
+	/*第六部分*/
+	footer{
+		font-size: .8rem;
+	}
+}
+	
+
+
+
+
+
+
+	
+	
